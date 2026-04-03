@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Hanzheng's Homepage"
 title_separator          : "-"
 name                     : &name "Hanzheng"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Hanzheng's personal website"
 url                      : https://DaDa-Chan.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -221,16 +221,16 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  projects:
     output: true
     permalink: /:collection/:path/
-  talks:
+  plog:
+    output: true
+    permalink: /:collection/:path/
+  courses:
     output: true
     permalink: /:collection/:path/
 
@@ -255,15 +255,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
   # _publications
   - scope:
       path: ""
@@ -273,21 +264,28 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
+  # _projects
   - scope:
       path: ""
-      type: portfolio
+      type: projects
     values:
       layout: single
       author_profile: true
       share: true
-      comment: true
-  # _talks
+  # _plog
   - scope:
       path: ""
-      type: talks
+      type: plog
     values:
-      layout: talk
+      layout: single
+      author_profile: true
+      share: true
+  # _courses
+  - scope:
+      path: ""
+      type: courses
+    values:
+      layout: single
       author_profile: true
       share: true
 
