@@ -1,16 +1,16 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Hanzheng Chen",
+    "email": "hanzhengc25@gmail.com",
     "phone": "",
-    "website": "https://academicpages.github.io",
+    "website": "https://dada-chan.github.io",
     "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Hangzhou",
+      "countryCode": "China",
+      "region": "Zhejiang"
     },
     "profiles": [
       {
@@ -25,40 +25,23 @@
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "DaDa-Chan",
+        "url": "https://github.com/DaDa-Chan"
       }
     ]
   },
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "Zhejiang University",
+      "area": "B.S. in Statistics",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "startDate": "09/2023",
+      "endDate": "present",
       "gpa": null,
       "courses": []
     }
+    
   ],
   "skills": [],
   "languages": [],

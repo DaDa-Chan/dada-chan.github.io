@@ -13,9 +13,10 @@ This is where I share my research, projects, travel stories, and notes. Feel fre
 
 ## What's here
 
+- **[CV](/cv/)** — My background and experience
 - **[Blog](/blog/)** — Thoughts, tutorials, and technical notes
 - **[Plog](/plog/)** — Photos from my travels and daily life
 - **[Course](/courses/)** — Study notes and learning resources
 - **[Publications](/publications/)** — My academic publications
 - **[Projects](/projects/)** — Things I've built or contributed to
-- **[CV](/cv/)** — My background and experience
+
