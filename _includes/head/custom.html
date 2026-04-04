@@ -14,4 +14,58 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 
+<!-- Custom typography improvements -->
+<style>
+  /* Better heading spacing and visual hierarchy */
+  .page__content h2 {
+    margin-top: 2em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid var(--global-border-color);
+  }
+
+  .page__content h3 {
+    margin-top: 1.6em;
+  }
+
+  .page__content h4 {
+    margin-top: 1.3em;
+  }
+
+  /* Math display blocks: more breathing room */
+  .page__content .MathJax_Display,
+  .page__content mjx-container[jax="CHTML"][display="true"] {
+    margin: 1.2em 0 !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  /* Definition/theorem blocks: subtle left border */
+  .page__content p > strong:first-child {
+    color: var(--global-base-color);
+  }
+
+  /* Better list spacing in notes */
+  .page__content li {
+    margin-bottom: 0.3em;
+  }
+
+  .page__content li > ul,
+  .page__content li > ol {
+    margin-top: 0.3em;
+  }
+
+  /* Table styling improvements */
+  .page__content table {
+    font-size: 0.9em;
+    margin: 1.2em 0;
+  }
+
+  /* Horizontal rules as section dividers */
+  .page__content hr {
+    margin: 2.5em 0;
+    border: none;
+    border-top: 2px solid var(--global-border-color);
+  }
+</style>
+
 <!-- end custom head snippets -->
