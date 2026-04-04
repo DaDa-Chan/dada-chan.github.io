@@ -151,7 +151,7 @@ $$U=U(\tilde{X},\tilde{Y})=\frac{\overline{X}-\overline{Y}}{\sqrt{\sigma_{X}^{2}
 * **(c) 一般情形**:
     * **大样本**: 当m和n都很大时，检验统计量 $U=\frac{\overline{X}-\overline{Y}}{\sqrt{S_{X}^{2}/m+S_{Y}^{2}/n}}$ 近似服从 $N(0,1)$。
     * **小样本**: 检验统计量 $\frac{\overline{X}-\overline{Y}-(\mu_{X}-\mu_{Y})}{\sqrt{S_{X}^{2}/m+S_{Y}^{2}/n}}$ 近似服从 $t(l)$ 分布，其中
-        $$l=\frac{\{{S_{X}^{*}}^{2}/m+{S_{Y}^{*}}^{2}/n\}^{2}}{\frac{{S_{X}^{*}}^{4}}{m^{2}(m-1)}+\frac{{S_{Y}^{*}}^{4}}{n^{2}(n-1)}}$$
+        {% raw %}$$l=\frac{\{{S_{X}^{*}}^{2}/m+{S_{Y}^{*}}^{2}/n\}^{2}}{\frac{{S_{X}^{*}}^{4}}{m^{2}(m-1)}+\frac{{S_{Y}^{*}}^{4}}{n^{2}(n-1)}}$${% endraw %}
 
 #### 2、比较方差的假设检验
 ##### (A) $\mu_X$ 和 $\mu_Y$ 均已知时

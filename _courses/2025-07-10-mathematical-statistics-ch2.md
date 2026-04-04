@@ -199,7 +199,7 @@ $$m_{e}\sim AN(\xi_{0.5},\frac{1}{4nf^{2}(\xi_{0.5})})$$
 
 * **定理**
     * 设 $X_1, ..., X_m$ i.i.d. $\sim N(\mu_X, \sigma_X^2)$ 和 $Y_1, ..., Y_n$ i.i.d. $\sim N(\mu_Y, \sigma_Y^2)$ 为两组独立的样本，其样本方差分别为 $S_X^2$ 和 $S_Y^2$，则 
-    $$F=\frac{{S_{X}}^{2}/\sigma_{X}^{2}}{{S_{Y}}^{2}/\sigma_{Y}^{2}}\sim F(m-1,n-1)$$ 
+    {% raw %}$$F=\frac{{S_{X}}^{2}/\sigma_{X}^{2}}{{S_{Y}}^{2}/\sigma_{Y}^{2}}\sim F(m-1,n-1)$${% endraw %}
 
 
 
