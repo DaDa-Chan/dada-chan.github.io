@@ -44,11 +44,11 @@ $$MSE_{\theta}(\hat{\theta})=Var(\hat{\theta})+Bias_{\theta}^{2}(\hat{\theta})$$
 **定义 3.1.4**: 设对每个自然数n，$$\hat{\theta_{n}}=\hat{\theta}(X_{1},X_{2},\cdots,X_{n})$$ 是$$\theta$$的估计量，假如
 $$\hat{\theta}_{n}\rightarrow\theta, \quad n\rightarrow\infty, \quad \forall\theta\in\Theta$$
 即对任意的 $$\epsilon>0$$，
-$$P_{\theta}(|\hat{\theta}_{n}-\theta|\ge\epsilon)\rightarrow0, \quad n\rightarrow\infty, \quad \forall\theta\in\Theta$$
+$$P_{\theta}(\lvert\hat{\theta}_{n}-\theta\rvert\ge\epsilon)\rightarrow0, \quad n\rightarrow\infty, \quad \forall\theta\in\Theta$$
 则称 $$\hat{\theta}_{n}$$ 是$$\theta$$的(弱)相合估计，亦称一致估计。
 
 * 若 $$P_{\theta}(lim_{n\rightarrow\infty}\hat{\theta}_{n}=\theta)=1, \forall\theta\in\Theta$$，则称 $$\hat{\theta}_{n}$$ 是$$\theta$$的**强相合估计**。
-* 若 $$lim_{n\rightarrow\infty}E_{\theta}|\hat{\theta}_{n}-\theta|^{r}=0, \forall\theta\in\Theta$$，则称$$\hat{\theta_{n}}$$是$$\theta$$的**r阶矩相合估计**，当 $$r=2$$ 时，称为**均方相合估计**。
+* 若 $$\lim_{n\rightarrow\infty}E_{\theta}\lvert\hat{\theta}_{n}-\theta\rvert^{r}=0, \forall\theta\in\Theta$$，则称$$\hat{\theta_{n}}$$是$$\theta$$的**r阶矩相合估计**，当 $$r=2$$ 时，称为**均方相合估计**。
 
 #### 5. 渐近正态性 (asymptotic normality)
 **定义**: 设 $$\hat{\theta}_{n}$$ 是$$\theta$$的估计量，假如
@@ -139,7 +139,7 @@ $$Var_{\theta}\{\hat{g}^{*}\}\le Var_{\theta}\{\hat{g}\}, \quad \forall\theta\in
 #### Rao-Blackwell 定理
 
 **定理 3.4.1 (Rao-Blackwell)**: 设 $$T=T(\tilde{X})$$ 是参数 $$\theta \in \Theta$$ 的充分统计量，$$\varphi(\tilde{X})$$ 是参数 $$g(\theta)$$ 的一个无偏估计，则
-$$\hat{g}(T)=E\{\varphi(\tilde{X})|T\}$$
+$$\hat{g}(T)=E\{\varphi(\tilde{X}) \mid T\}$$
 也是 $$g(\theta)$$ 的无偏估计，且
 $$Var_{\theta}\{\hat{g}(T)\}\le Var_{\theta}\{\varphi(\tilde{X})\}, \quad \forall\theta\in\Theta$$
 其中等号成立的充分必要条件是 $$P_{\theta}\{\varphi(\tilde{X})=\hat{g}(T)\}=1, \forall\theta\in\Theta$$。
@@ -185,10 +185,10 @@ $$P_{\theta}\{\varphi(T)=0\}=1, \quad \forall\theta\in\Theta$$
 ##### Lehmann-Scheffé 定理
 
 **定理 3.4.3 (Lehmann-Scheffé)**: 设 $$S=S(\tilde{X})$$ 是参数的**充分完备统计量** (complete sufficient statistic)，则可估参数$$g(\theta)$$的UMVUE存在且唯一。若 $$\varphi(\tilde{X})$$ 是$$g(\theta)$$的一个无偏估计，则$$g(\theta)$$唯一的UMVUE就是
-$$E[\varphi(\tilde{X})|S]$$
+$$E[\varphi(\tilde{X}) \mid S]$$
 
 **寻找UMVUE的方法**:
-1.  先找一个充分完备统计量S，再找一个可估参数的无偏估计$$\varphi(\tilde{X})$$，计算条件期望 $$E[\varphi(\tilde{X})|S]$$ 就得到UMVUE。
+1.  先找一个充分完备统计量S，再找一个可估参数的无偏估计$$\varphi(\tilde{X})$$，计算条件期望 $$E[\varphi(\tilde{X}) \mid S]$$ 就得到UMVUE。
 2.  先找一个充分完备统计量S，再找一个S的函数h(S)使得它是可估参数的无偏估计，h(S)即为所求的UMVUE。
 
 **定理**: 设总体来自指数型分布族，样本的联合pdf或pmf为

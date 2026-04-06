@@ -72,8 +72,8 @@ $$sup_{\theta\in\Theta_{0}}\alpha(\theta)\le\alpha$$
 1.  根据问题提出原假设$$H_0$$和备择假设$$H_1$$。
 2.  确定检验统计量$$T(X_1, \dots, X_n)$$，并根据备择假设的形式确定拒绝域D的形式。
     * **单侧拒绝域**: $$D=\{\tilde{x}:T(\tilde{x})<C\}$$ 或 $$D=\{\tilde{x}:T(\tilde{x})>C\}$$
-    * **双侧拒绝域**: $$D=\{\tilde{x}:T(\tilde{x})<C_1 \text{ 或 } T(\tilde{x})>C_2\}$$ 或 $$D=\{\tilde{x}:|T(\tilde{x})|>C\}$$
-3.  选取适当的显著性水平$$\alpha$$，并求出临界值，使得 $$sup P(\tilde{X}\in D|H_{0} \text{为真})\le\alpha$$ 且尽可能地接近$$\alpha$$。
+    * **双侧拒绝域**: $$D=\{\tilde{x}:T(\tilde{x})<C_1 \text{ 或 } T(\tilde{x})>C_2\}$$ 或 $$D=\{\tilde{x}:\lvert T(\tilde{x})\rvert>C\}$$
+3.  选取适当的显著性水平$$\alpha$$，并求出临界值，使得 $$\sup P(\tilde{X}\in D \mid H_{0} \text{为真})\le\alpha$$ 且尽可能地接近$$\alpha$$。
 4.  由样本的观察值算出检验统计量的值 $$t=T(\tilde{x})$$，并与临界点进行比较，若观察值落入拒绝域D，则拒绝原假设$$H_0$$，否则接受原假设。
 
 ---
@@ -93,7 +93,7 @@ $$u=u(\tilde{X})=\frac{\overline{X}-\mu_{0}}{\sigma/\sqrt{n}}$$
 在 $$H_0$$ 为真时，$$u \sim N(0,1)$$。
 * 对于 $$H_{0}:\mu=\mu_{0} \leftrightarrow H_{1}:\mu>\mu_{0}$$ 或 $$H_{0}:\mu\le\mu_{0} \leftrightarrow H_{1}:\mu>\mu_{0}$$，拒绝域为 $$D=\{u>u_{\alpha}\}$$。
 * 对于 $$H_{0}:\mu=\mu_{0} \leftrightarrow H_{1}:\mu<\mu_{0}$$ 或 $$H_{0}:\mu\ge\mu_{0} \leftrightarrow H_{1}:\mu<\mu_{0}$$，拒绝域为 $$D=\{u<-u_{\alpha}\}$$。
-* 对于 $$H_{0}:\mu=\mu_{0} \leftrightarrow H_{1}:\mu\ne\mu_{0}$$，拒绝域为 $$D=\{|u|>u_{\alpha/2}\}$$。
+* 对于 $$H_{0}:\mu=\mu_{0} \leftrightarrow H_{1}:\mu\ne\mu_{0}$$，拒绝域为 $$D=\{\lvert u\rvert>u_{\alpha/2}\}$$。
 这些检验称为 **u-检验法**。
 
 #### (B) $$\sigma^{2}$$ 未知时
@@ -104,7 +104,7 @@ $$t=t(\tilde{X})=\frac{\overline{X}-\mu_{0}}{S/\sqrt{n}}$$
 **结论**: $$t(\tilde{X})=\frac{\sqrt{n}(\overline{X}-\mu_{0})/\sigma}{S/\sigma} \sim t(n-1,\frac{\mu-\mu_{0}}{\sigma/\sqrt{n}})$$。
 * 对于 $$H_{0}:\mu\ge\mu_{0}\leftrightarrow H_{1}:\mu<\mu_{0}$$，拒绝域为 $$D=\{t<-t_{\alpha}(n-1)\}$$。
 * 对于 $$H_{0}:\mu\le\mu_{0}\leftrightarrow H_{1}:\mu>\mu_{0}$$，拒绝域为 $$D=\{t>t_{\alpha}(n-1)\}$$。
-* 对于 $$H_{0}:\mu=\mu_{0}\leftrightarrow H_{1}:\mu\ne\mu_{0}$$，拒绝域为 $$D=\{|t|>t_{\alpha/2}(n-1)\}$$。
+* 对于 $$H_{0}:\mu=\mu_{0}\leftrightarrow H_{1}:\mu\ne\mu_{0}$$，拒绝域为 $$D=\{\lvert t\rvert>t_{\alpha/2}(n-1)\}$$。
 这些检验称为 **t-检验**。
 
 #### 2、正态总体方差 $$\sigma^2$$ 的假设检验
@@ -139,7 +139,7 @@ $$U=U(\tilde{X},\tilde{Y})=\frac{\overline{X}-\overline{Y}}{\sqrt{\sigma_{X}^{2}
 在 $$H_0: \mu_X = \mu_Y$$ 为真时，$$U \sim N(0,1)$$。
 * 对于 $$H_{0}:\mu_{X}\ge\mu_{Y}\leftrightarrow H_{1}:\mu_{X}<\mu_{Y}$$，拒绝域为 $$D=\{U<-u_{\alpha}\}$$。
 * 对于 $$H_{0}:\mu_{X}\le\mu_{Y}\leftrightarrow H_{1}:\mu_{X}>\mu_{Y}$$，拒绝域为 $$D=\{U>u_{\alpha}\}$$。
-* 对于 $$H_{0}:\mu_{X}=\mu_{Y}\leftrightarrow H_{1}:\mu_{X}\ne\mu_{Y}$$，拒绝域为 $$D=\{|U|>u_{\alpha/2}\}$$。
+* 对于 $$H_{0}:\mu_{X}=\mu_{Y}\leftrightarrow H_{1}:\mu_{X}\ne\mu_{Y}$$，拒绝域为 $$D=\{\lvert U\rvert>u_{\alpha/2}\}$$。
 
 ##### (B) $$\sigma_X^2$$ 和 $$\sigma_Y^2$$ 均未知时
 * **(a) $$\sigma_{X}^{2}=\sigma_{Y}^{2}=\sigma^{2}$$ 情形**: 检验统计量为
@@ -270,7 +270,7 @@ $$\lambda(\tilde{x})=\frac{L_{1}(\hat{\theta}_{1};\tilde{x})}{L_{0}(\hat{\theta}
 检验规则为：
 * 当 $$\lambda(\tilde{x})>C$$ 时, 拒绝 $$H_0$$；
 * 当 $$\lambda(\tilde{x})\le C$$ 时, 接受 $$H_0$$。
-其中，C满足 $$P(\lambda(\tilde{X})>C|H_{0} \text{为真}) \le \alpha$$ 且尽可能接近。
+其中，C满足 $$P(\lambda(\tilde{X})>C \mid H_{0} \text{为真}) \le \alpha$$ 且尽可能接近。
 
 ---
 ## §5.5 检验的p值 (p-value)
@@ -296,7 +296,7 @@ p值是能用当前这组样本（的检验统计量的值）做出“拒绝$$H_
 #### 方法一（传统方法）
 1.  根据问题提出原假设$$H_0$$和备择假设$$H_1$$。
 2.  确定检验统计量$$T(X_1, \dots, X_n)$$并根据备择假设确定拒绝域D的形式。
-3.  选取适当的显著性水平$$\alpha$$，并求出临界值，使得 $$sup P(\tilde{X} \in D | H_0 \text{为真}) \le \alpha$$ 且尽可能地接近$$\alpha$$。
+3.  选取适当的显著性水平$$\alpha$$，并求出临界值，使得 $$\sup P(\tilde{X} \in D \mid H_0 \text{为真}) \le \alpha$$ 且尽可能地接近$$\alpha$$。
 4.  由样本$$\tilde{X}$$的观察值算出检验统计量的值 $$t=T(\tilde{x})$$，并与临界点进行比较，若观察值落入拒绝域D，则拒绝原假设$$H_0$$，否则接受原假设。
 
 #### 方法二（p值法）
